@@ -194,6 +194,9 @@ Add a ``.readthedocs.yaml`` file in your project's repository with the following
 	# python:
 	#    install:
 	#    - requirements: docs/requirements.txt
+	
+    install:
+	     - requirements: ./requirements.txt
 
 Notice that Read the Docs wants to know the path to the ``conf.py`` document: make sure the path to this file is correct.
 
