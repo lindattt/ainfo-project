@@ -56,7 +56,7 @@ Add the path ``.github/workflows`` to your project and create a file named ``doc
 	          force_orphan: true
 			  
 			 
-The important line is the one that contains the ``sphinx-build`` instruction. The syntax of this instruction is
+The important line is line 19, the one that contains the ``sphinx-build`` instruction. The syntax of this instruction is
 
 .. code-block:: bash
 
@@ -67,7 +67,7 @@ and in our example the source directory is called ``source`` while the output di
 
 *	**Step 2**: configure GitHub Pages.
 
-Once you add this file to your project repository and push it on GitHub, a **new branch** called ``gh-pages`` will be created.
+Once you add this file to your project repository and push it on GitHub, a **new branch** called ``gh-pages`` will be automatically created.
 
 On GitHub, you then have to go to **Settings > Pages**, select **"deploy from a branch"** under the section **"Build and deployment"**, select the branch ``gh-pages`` and save changes.
 
@@ -132,7 +132,7 @@ Create a ``.gitlab-ci.yml`` file with the following content:
 	  rules:
 	    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
 
-As in the GitHub example above, the important line is the one that contains the ``sphinx-build`` instruction. Make sure that the directory where you keep all your plain-text files is called ``source`` or change the path accordingly. Notice that now the output directory is called ``public`` instead of ``build``, but that doesn't matter: this directory **will not** be part of your repository anyway; it's a directory created and used internally by GitLab to deploy the website and you don't need to have access to it.
+As in the GitHub example above, the important lines are those that contain the ``sphinx-build`` instruction, i.e. line 7 and 15 in the above example. Make sure that the directory where you keep all your plain-text files is called ``source`` or change the path accordingly. Notice that now the output directory is called ``public`` instead of ``build``, but that doesn't matter: this directory **will not** be part of your repository anyway; it's a directory created and used internally by GitLab to deploy the website and you don't need to have access to it.
 
 The deployment of the website will start automatically once you add and push this file to your repository.
 
@@ -160,7 +160,7 @@ Sign up on `Read the Docs <https://readthedocs.com>`_  with your **GitHub** acco
 Add a ``.readthedocs.yaml`` file in your project's repository with the following content:
 
 .. code-block:: yaml
-	:linenos:
+   :linenos:
 
 	# .readthedocs.yaml
 	# Read the Docs configuration file
@@ -194,11 +194,11 @@ Add a ``.readthedocs.yaml`` file in your project's repository with the following
 	# python:
 	#    install:
 	#    - requirements: docs/requirements.txt
-	
     install:
 	     - requirements: ./requirements.txt
 
-Notice that Read the Docs wants to know the path to the ``conf.py`` document: make sure the path to this file is correct.
+
+Notice that Read the Docs wants to know the path to the ``conf.py`` document (line 20): make sure the path to this file is correct.
 
 *	**Step 3**: push changes to your GitHub repository.
 

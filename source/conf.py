@@ -19,7 +19,7 @@
 
 project = 'Basics of technical documentation'
 html_title = 'Basics of technical documentation'
-copyright = '2023, Linda Tamaro'
+copyright = '2024, Linda Tamaro'
 author = 'Linda Tamaro'
 
 

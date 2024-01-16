@@ -38,7 +38,7 @@ Let it be, for example, your home directory ``~/``.
    
 *   **Step 3**: Create a new repository on GitHub. 
 
-Let's use the command line interface (CLI):
+Let's use the Command Line Interface (CLI):
 
 .. code-block:: bash
 
@@ -75,11 +75,11 @@ You can choose the default options by pressing the enter key and the output will
 	
 If you answer yes to the last question, the repository will be copied locally, and its path will be ``~/myrep``. 
 
-*	**Step 4**: Clone `this repository <https://framagit.org/coslo/template-docs>`__.
+*	**Step 4**: Clone `this repository <https://github.com/lindattt/template-sphinx>`__.
 
 .. code-block:: bash
 	
-	git clone https://framagit.org/coslo/template-docs
+	git clone https://github.com/lindattt/template-sphinx
 
 This repository contains the basics to put up a virtual environment with Python and Sphinx installed.
 	

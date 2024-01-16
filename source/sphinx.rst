@@ -62,13 +62,13 @@ After that, some files and some directories will be created.
 
 Directories:
 
-*	**source**: contains plain-text files of documentation.
-*	**build**: contains output files	
+*	**source**: contains plain-text files of documentation;
+*	**build**: contains output files.	
 
 
 Files:
 	 
-*	**index.rst**: main file for Sphinx. It contains the index of all pages of the documentation and represents the homepage of the documentation once the project is converted in an interactive output format (like HTML).
+*	**index.rst**: main file for Sphinx. It contains the index of all pages of the documentation and represents the homepage of the documentation once the project is converted in an interactive output format (like HTML);
 *	**conf.py**: configuration file for Sphinx. It contains metadata and information regarding extensions, themes, etc.
 
 
@@ -286,7 +286,6 @@ Let's take a look on a slightly more elaborated ``conf.py`` document, in order t
 	
 Information about the variables contained in this document can be found in `this page <https://www.sphinx-doc.org/en/master/usage/configuration.html>`__.
 
-Let's take a closer look on some specific part of ``conf.py``. 
 
 
 
@@ -312,7 +311,7 @@ In this section we can edit: the name of the project; the title that will appear
 
 	extensions = []
 	
-Extensions can be added to the build process, in order to customize almost any aspect of document processing. Extensions must be added as strings. Examples of built-in extensions provided by Sphinx are ``sphinx.ext.doctest``, which tests snippets in the documentation, or ``sphinx.ext.doctest``, which enables the creation of to-do lists.
+Extensions can be added to the build process, in order to customize almost any aspect of document processing. Extensions must be added as strings. Examples of built-in extensions provided by Sphinx are ``sphinx.ext.doctest``, which tests snippets in the documentation, or ``sphinx.ext.todo``, which enables the creation of to-do lists.
 
 
 
@@ -327,7 +326,7 @@ Themes and templates are two different things.
 
 You can overwrite only specific blocks within a template, customizing it while also keeping the changes at a minimum.
 
-Sphinx will look for templates in the folders of templates_path first, and if it can’t find the template it’s looking for there, it falls back to the selected theme’s templates.
+Sphinx will look for templates in the folders of ``templates_path`` first, and if it can’t find the template it’s looking for there, it falls back to the selected theme’s templates.
 
 
 ``root_doc``
@@ -348,22 +347,13 @@ The document name of the “root” document, that is, the document that contain
 	highlight_language = 'none'
 	
 This variable refers to the default programming language to highlight source code in. Almost any documentation project contains code blocks to explain chunks of the code; this page itself contains several blocks. It is possible to customize each block so that the text is not single-coloured but highlighted, as it would be in the editor. If no specification is indicated in the block, the highlight will be the one contained in the ``highlight_language`` variable. 
-For example, if we are writing documentation exclusively related to fortran
-
-.. code-block:: fortran
-
-	1+1
-	
-.. code-block:: html
-
-	1+1
 	
 	
 
 ``exclude_patterns``
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-This string contains pattern that are excluded when looking for source files during the building. 
+This string contains pattern that are excluded when looking for source files during the building. A common choice is the following:
 
 
 .. code-block:: python
@@ -378,7 +368,7 @@ This string contains pattern that are excluded when looking for source files dur
 	
 	html_static_path = []
 
-This variable consists of paths that contain custom static files, i.e. CSS files that enable to customize the style of the HTML output. For example, we can create a file :file:`custom.css` in the :file:`_static` folder and change the main body font family, from sans-serif (which is default for furo's theme) to serif:
+This variable consists of paths that contain custom static files, i.e. CSS files that enable to customize the style of the HTML output. For example, we can create a file :file:`custom.css` in the :file:`_static` folder and change the main body font family, from sans-serif to serif:
 
 .. code-block:: python
 	

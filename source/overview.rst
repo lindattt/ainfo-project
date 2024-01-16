@@ -14,7 +14,7 @@ In order to generate your own documentation, those are the **tools** that you wi
 *   a :ref:`version control platform <git>`, like **GitHub** or **GitLab**;
 *   a :ref:`documentation compiler <sphinx>`, like **Sphinx**;
 *   a :ref:`markup language <markup>`, like **reStructured Text**;
-*   a :ref:`hosting service <host>`, like **Read the docs** or the **Git platforms** theirselves.
+*   a :ref:`hosting service <host>`, like **Read the docs** or the **Git platforms** themselves.
 
 To make your experience more fluent and personal, you may also like to have a look on:
 

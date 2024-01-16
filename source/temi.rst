@@ -6,7 +6,7 @@ Themes
 
 Sphinx supports changing the appearance of its HTML output via **themes**. A theme is a collection of HTML templates, stylesheets and other static files.
 
-The default theme for a Sphinx project is *Alabaster*, but there are plenty of free themes that you can choose. Here you can find some: https://sphinx-themes.org.
+The default theme for a Sphinx project is *Alabaster*, but there are plenty of free themes that you can choose. `Here <https://sphinx-themes.org>`__ you can find some.
 
 
 Exercise: Change the theme of your Sphinx project
@@ -25,7 +25,7 @@ In your shell, run:
 
 	pip install sphinx-rtd-theme
 
-*   **Step 2**: edit ``conf.py`` file.
+*   **Step 2**: edit the ``conf.py`` file.
 
 Open ``conf.py``, look for the ``html_theme`` variable end edit as follows:
 
@@ -43,20 +43,20 @@ Change the theme in GitHub and GitLab pages
 
 *   **Step 1**: edit ``.yml`` files.
 
-** 	For GitHub, you have to edit the ``documentation.yml`` file. In order to install the theme, edit line 16 of the file (see :ref:`here <github>`) with the following:
+For **GitHub**, you have to edit the ``documentation.yml`` file. In order to install the theme, edit line 16 of the file (see :ref:`here <github>`) with the following:
 
 .. code-block:: shell
 
 	 pip install sphinx sphinx_rtd_theme myst_parser sphinx-rtd-theme
 
-**  For GitLab, you have to edit the ``.gitlab-ci.yml`` file. In order to install the theme, add the following line in the file, before both ``sphinx-build`` commands (see :ref:`here <gitlab>`):
+For **GitLab**, you have to edit the ``.gitlab-ci.yml`` file. In order to install the theme, add the following line in the file, before both ``sphinx-build`` commands (see :ref:`here <gitlab>`):
 
 .. code-block:: shell
 
   - pip install sphinx-rtd-theme
 
 
-*   **Step 2**: edit ``conf.py`` file.
+*   **Step 2**: edit the ``conf.py`` file.
 
 Open ``conf.py``, look for the ``html_theme`` variable end edit as follows:
 

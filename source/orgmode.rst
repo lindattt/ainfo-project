@@ -15,7 +15,7 @@ Having a specific syntax and working on plain text files, on the surface Org-mod
 Markup basics
 ~~~~~~~~~~~~~
 
-As **Markdown** and **reStructured Text**, Org's syntax is straightforward and hence classifiable as a **lightweight markup language**. The following is an example of the basic markup.
+As Markdown and reStructured Text, Org's syntax is straightforward and hence classifiable as a **lightweight markup language**. The following is an example of the basic markup.
 
 .. image:: ./orgmarkup.png
 
@@ -55,7 +55,7 @@ With proper libraries, you can export ``.org`` documents in a series of formats.
 *	**LaTeX**;
 *	**Markdown**.
 
-Among these, Org only loads libraries for HTML and LaTeX by default. Additional libraries can be loaded in either of two ways: by configuring the org-export-backends variable, or by requiring libraries in the Emacs `init file <https://www.gnu.org/software/emacs/manual/html_node/emacs/Find-Init.html>`__. For example, to load the Markdown back-end, add this to your Emacs config file and restart Emacs:
+Among these, Org only loads libraries for HTML and LaTeX by default. Additional libraries can be loaded in either of two ways: by configuring the org-export-backends variable, or by requiring libraries in the Emacs `init file <https://www.gnu.org/software/emacs/manual/html_node/emacs/Find-Init.html>`__. For example, to load the Markdown library, add this to your Emacs config file and restart Emacs:
 
 .. code:: lisp
 
