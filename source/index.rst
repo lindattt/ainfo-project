@@ -1,8 +1,8 @@
 
-Basics of technical documentation: a project for the "Abilità informatiche" class
+Basics of technical documentation
 =================================================================================
 
-This is the **project** related to the **"Abilità informatiche"** class.
+This is the **finalm project** fort to the **Information Technology Tools** class.
 
 The **goals** of the project were: 
 
